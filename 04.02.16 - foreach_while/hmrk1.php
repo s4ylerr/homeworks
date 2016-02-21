@@ -11,8 +11,22 @@ foreach ($arr as $key => $value) {
 }
 
 
+sort($arr);
 
+// a) City sort alpha betic order
+echo "<table border=1><tr>";
+foreach ($arr as $key ) {
+	echo "<td> ".$key. "</td></tr>";
+}
+echo "</table>";
 
+// b) Country sort alpha betic ordert 
+
+ksort($arr);
+echo "<table border=1><tr>";
+foreach ($arr as $key ) {
+	echo "<td> ".$key. "</td></tr>";
+}
 
 
 
